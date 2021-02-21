@@ -46,21 +46,21 @@ from kaga.modules.helper_funcs.alternate import typing_action
 
 
 PM_START_TEXT = f"""
-Hai, perkenalkan nama saya adalah *{dispatcher.bot.first_name}*.
+Hai, perkenalkan nama saya adalah Levi Ackerman.
 Saya adalah bot manajemen grup bertema Anime dengan banyak Fitur Khusus.
 Anda dapat menemukan daftar perintah yang tersedia dengan /help.
 
-Bergabunglah di [Group](https://t.me/ZeroBotSupport) Jika Anda ingin Melaporkan Masalah 🙂
+Bergabunglah di [Group](https://t.me/itsukihelp) Jika Anda ingin Melaporkan Masalah 🙂
 
 Saya di sini untuk membuat pengelolaan grup Anda menyenangkan dan mudah!
-Saya memiliki banyak fitur praktis ☺️ seperti:
+Saya memiliki banyak fitur praktis 😎 seperti:
 
 • Anime
 • Pengendalian flood.
 • Sistem penyimpanan Note.
 • Sistem Warning.
 
-*Dikelolah oleh ❤️:* [Hayaka Ryu](https://t.me/HayakaRyu)
+*Dikelolah oleh ⚔️:* [coiju](https://t.me/coiju)
 
 Ingin menambahkan saya ke grup Anda? Cukup klik tombol di bawah!
 """
@@ -68,7 +68,7 @@ Ingin menambahkan saya ke grup Anda? Cukup klik tombol di bawah!
 buttons = [
     [
         InlineKeyboardButton(
-            text="Tambahkan Saya ke Grup 👥", url="t.me/KagaRobot?startgroup=true"
+            text="✨Masukkan Aku Ke Grup ✨", url="t.me/KagaRobot?startgroup=true"
         ),
     ]
 ]
@@ -78,10 +78,10 @@ buttons += [
     [
         InlineKeyboardButton(
             text="Help & Commands ❔",
-            url=f"t.me/{dispatcher.bot.username}?start=help",
+            url=f"t.me/LeviAckermannRobot?start=help",
         ),
         InlineKeyboardButton(
-            text="Gban Logs 🚫", url="https://t.me/joinchat/AAAAAEuYErj6v8_DOigW0g"
+            text="Channel Saya", url="https://t.me/takahashihelp"
         ),
         
     ]
@@ -90,10 +90,10 @@ buttons += [
 buttons += [
     [
         InlineKeyboardButton(
-            text="Support 🎗️", url="https://t.me/ZeroBotSupport"
+            text="Support 🎗️", url="https://t.me/itsukihelp"
         ),
         InlineKeyboardButton(
-            text="Channel 📢", url="https://t.me/HayakaRyuUpdates"
+            text="", url="https://t.me/LeviAckermannUpdates"
         ),
     ]
 ]
@@ -101,15 +101,15 @@ buttons += [
 
 
 HELP_STRINGS = f"""
-Halo! Nama saya adalah *{dispatcher.bot.first_name}*.
+Halo! Nama saya adalah Levi Ackerman.
 Saya bot manajemen grup bertema Anime dengan beberapa tambahan yang menyenangkan! Lihatlah yang berikut ini untuk mendapatkan gambaran tentang beberapa \
 hal-hal yang dapat saya bantu.
 
 *Perintah utama* yang tersedia:
- × /start: Mulai saya, dapat digunakan untuk memeriksa saya masih hidup atau tidak...
- × /help: PM Anda ke pesan ini.
- × /help <nama modul>: PM Anda info tentang modul itu.
- × /settings: di PM: akan mengirimkan pengaturan Anda untuk semua modul yang didukung.
+    ⚔️/start: Mulai saya, dapat digunakan untuk memeriksa saya masih hidup atau tidak...
+    ⚔️/help: PM Anda ke pesan ini.
+   ⚔️/help <nama modul>: PM Anda info tentang modul itu.
+  ⚔️/settings: di PM: akan mengirimkan pengaturan Anda untuk semua modul yang didukung.
    - dalam grup: akan mengarahkan Anda ke pm, dengan semua pengaturan obrolan itu.
  \nKlik tombol di bawah ini untuk mendapatkan dokumentasi tentang modul tertentu!"""
 
@@ -272,7 +272,7 @@ def start(update, context):
 
         else:
             update.effective_message.reply_photo(
-                "https://telegra.ph/file/ef0c265be939ec29bb53c.jpg",
+                "https://telegra.ph/file/b18e86e66178bf98a4b3f.jpg",
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
